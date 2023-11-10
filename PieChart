@@ -1,0 +1,12 @@
+# library
+import pandas as pd
+import matplotlib.pyplot as plt
+ 
+# --- dataset 1: just 4 values for 4 groups:
+df = pd.DataFrame([8,8,1,2], index=['a', 'b', 'c', 'd'], columns=['x'])
+ 
+# make the plot
+df.plot(kind='pie', subplots=True, figsize=(8, 8))
+
+# show the plot
+plt.show()
